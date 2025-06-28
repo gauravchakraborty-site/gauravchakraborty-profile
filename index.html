@@ -1,75 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gaurav's Web3 Homepage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaurav Chakraborty</title>
   <style>
+    /* Dark mode styling */
     body {
       margin: 0;
-      padding: 0;
-      background: #0f1117;
-      font-family: 'Segoe UI', sans-serif;
-      color: #eee;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
-      animation: fadeIn 1.5s ease-in-out;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
     }
 
-    .card {
-      background: #1c1f26;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+    header {
+      background-color: #161b22;
+      padding: 20px;
       text-align: center;
-      animation: slideUp 1s ease-out;
+      animation: fadeIn 2s ease-out;
     }
 
-    h1 {
-      font-size: 28px;
-      color: #0ff;
-      margin-bottom: 10px;
+    header h1 {
+      margin: 0;
+      color: #58a6ff;
     }
 
-    p {
-      font-size: 16px;
-      color: #ccc;
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #21262d;
+      border-radius: 8px;
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    h2 {
+      color: #79c0ff;
     }
 
     a {
-      color: #0ff;
+      color: #58a6ff;
       text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 15px;
-      transition: transform 0.2s ease;
     }
 
     a:hover {
-      transform: scale(1.05);
-      text-shadow: 0 0 10px #0ff;
+      text-decoration: underline;
     }
 
+    footer {
+      text-align: center;
+      padding: 10px;
+      font-size: 0.85em;
+      color: #8b949e;
+    }
+
+    /* Animation */
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
 
-    @keyframes slideUp {
-      from { transform: translateY(30px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Welcome to Gaurav's Web3 Homepage</h1>
-    <p>This is a sleek, dark-themed animated GitHub Pages site.</p>
-    <p>More features & updates coming soon. Stay connected.</p>
-    <a href="https://github.com/gauravchakraborty-site">🔗 View GitHub Profile</a>
-  </div>
+  <header>
+    <h1>Welcome to Gaurav Chakraborty's Site</h1>
+    <p>This is my minimal homepage hosted on IPFS via gauravchakraborty.brave</p>
+  </header>
+
+  <section>
+    <h2>💼 Projects</h2>
+    <p>Analytics | Automation | Financial Engineering | Python | KNIME</p>
+    <ul>
+      <li><a href="#">Download Resume</a></li>
+      <li><a href="#">See my GitHub</a></li>
+      <li><a href="#">View LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🧠 Interests</h2>
+    <p>Web3 | AI | Data Engineering | System Security | Tactical Ops</p>
+  </section>
+
+  <section>
+    <h2>📬 Contact</h2>
+    <p>Email: gaurav.chakraborty.inbox@outlook.com</p>
+    <p>Twitter/X: <a href="#">@handle</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Gaurav Chakraborty
+  </footer>
 </body>
 </html>
